@@ -1,0 +1,193 @@
+\section{Spezifizierte Anforderungen}
+
+\subsection{Funktionale Anforderungen}
+Diese Anforderungen sollen vor allem für einen schnellen Überblick sorgen und die technischen Fragen klären.
+
+\subsubsection{Zugrunde liegende Software}
+\begin{description}
+	 \item[Webserver:] Apache 2.0.xx mit PHP4 (für das Forum) und mod\_jk (als Verbindung zum Servlet-Container)
+	\item [Datenbankserver:] MySQL5.0.x (wichitg vor allem für Views)
+	\item [Servlet-Container:] Apache Tomcat 5.5 mit J2SE5.0
+ \end{description}
+
+\subsubsection{Bildergalerien}
+\label{sec:bildergalerie}
+\begin{itemize}
+ \item Galerie/Untergalerie öffnen
+ \item Bild betrachten
+ \item Bild bewerten (AJAX)
+ \item Direktlink für Bild erhalten
+ \item Bilder sind nicht direkt herunterladbar
+ \item Benutzer kann sich 10 Bilder zumailen lassen
+	\begin{itemize}
+		\item 10 Bilder in einen Korb verschieben
+		\item Korb anzeigen lassen
+		\item Captcha zur Überprüfung
+		\item Emailadresse angeben und Bilder zumailen lassen
+	\end{itemize}
+ \item Top50 betrachten
+ \item Admin kann
+	\begin{itemize}
+ 		\item Galerie anlegen (Applet zum Upload von Dateien?)
+		\begin{itemize}
+			\item Thumbnails generieren
+			\item Wasserzeichen einfügen
+			\item Thumbnail für Übersicht auswählen
+		\end{itemize}
+		\item Galerie bearbeiten
+			\begin{itemize}
+			 \item Untergalerie hinzufügen
+ 			\item Datum, Fotograf und Titel angeben
+ 			\item Cavebot kann Thread zum Kommentieren anlegen
+			\end{itemize}
+		\item Galerie löschen
+		\item Foto aus einer Galerie löschen
+	\end{itemize}
+\end{itemize}
+
+
+\subsubsection{Gästebuch}
+\label{sec:gaestebuch}
+\begin{itemize}
+ \item Eintrag schreiben mit 
+	\begin{itemize}
+		\item Name
+		\item Nachricht
+		\item Email
+		\item Homepage
+		\item ICQ-Nummer (andere IMs werden faktisch nicht genutzt)
+\end{itemize}
+ \item Captcha um Spameinträge zu verhinden
+ \item Admin kann:
+	\begin{itemize}
+ 		\item Beitrag bearbeiten (sichtbar für den Besucher)
+ 		\item Beitrag löschen
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Forum}
+\label{sec:forum}
+\begin{itemize}
+ \item Bleibt als solches bestehen. Abgleich der Themes wird mit dem Theme-Wechsel schwer zu realisieren
+\end{itemize}
+
+\subsubsection{Eventkalender}
+\label{sec:eventkalender}
+\begin{itemize}
+ \item Benutzer können Event einseh
+ \item Benutzer können Event ko\-mmen\-tier\-en (übers Forum, Cave\-Bot legt Thread an)
+ \item Ein Event besteht aus
+	\begin{itemize}
+		\item Ort
+		\item Zeit
+		\item Flyer
+		\item Beschreibung/Motto
+	\end{itemize}
+\item Admin kann
+	\begin{itemize}
+		\item Event anlegen
+		\item Event bearbeiten
+		\item Event löschen
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Newssystem}
+\begin{itemize}
+ \item Alle aktiven Threads aus einem Unterforum werden angezeigt inklusive Direktlink
+\end{itemize}
+
+\subsubsection{Linkliste}
+\label{sec:linkliste}
+\begin{itemize}
+ \item Ein Link besteht aus
+	\begin{itemize}
+		\item Beschreibung
+		\item URL
+		\item Banner (Flash oder Bild)
+	\end{itemize}
+\item Admin kann
+	\begin{itemize}
+		\item Link hinzufügen
+		\item Link bearbeiten
+		\item Link löschen
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Credits}
+\label{sec:credits}
+\begin{itemize}
+ \item Entspricht prinzipiell der Linkliste
+ \item Ein Credit besteht aus
+	\begin{itemize}
+ 		\item Aufgabenbereich
+ 		\item Beschrebung
+ 		\item Bild
+	\end{itemize}
+ \item Admin kann
+	\begin{itemize}
+ 		\item Person hinzufügen
+ 		\item Person bearbeiten
+ 		\item Person löschen
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Counter}
+\label{sec:counter}
+\begin{itemize}
+ \item Anzeigen der aktuell online, gestrigen und heutige Besucher
+ \item Protokolliert werden
+	\begin{itemize}
+		 \item Länge des Aufenthalts
+		 \item Besuchte Seiten
+ 		 \item Anzahl der angesehen Bilder/Galerien
+		 \item Verwendeter Browser
+		 \item Herkunft des Besuchers (anhand der IP)
+	\end{itemize}
+ \item Admin kann sich Statistik anzeigen lassen
+	\begin{itemize}
+		\item Kuchendiagramme
+		\item Zeitliche verändunger als Diagramm
+		\item Tabellenform
+	\end{itemize}
+\end{itemize}
+
+
+\subsubsection{Design}
+\label{sec:design}
+\begin{itemize}
+ \item Standardtheme, bestehend aus .CSS und .JPG/.PNG
+ \item Weitere (n) Themes können zu bestimmten Tagen an stelle des Standardthemes genutzt werden
+ \item Themes werden in Webapplikation eingefügt, über Administratoinsoberfläche in den "`Zeitplan"' eingefügt
+\end{itemize}
+
+\subsubsection{Administrationsaufgaben}
+\begin{itemize}
+ \item Autentifizierung über Passwort (unabhängig vom Forum
+ \item Hauptpunkte der Administration:
+\begin{itemize}
+ \item Gästebuch - vgl. \ref{sec:gaestebuch}
+ \item Bildergalerie - vgl. \ref{sec:bildergalerie}
+ \item Counter - vgl. \ref{sec:counter}
+ \item Linkliste - vgl. \ref{sec:linkliste}
+ \item Credits - vgl. \ref{sec:credits}
+ \item Design - vgl. \ref{sec:design}
+\end{itemize}
+
+\end{itemize}
+
+
+\subsection{Nicht-funktionale Anforderungen}
+Obwohl oder gerade weil es sich um eine private Seite handelt müssen die Gesetzte eingehalten werden. Vor allem das DatenschutzG sind dabei zu berücksichtigen.
+
+Auch soll Incave.de barrierfrei sein. Einerseits aus moralischen Gründen, andererseits ist davon auszugehen, dass immer mehr mobile Geräte auch das Internet nutzen können. Dann ist eine Verwendung von Incave direkt von unterwegs (z.B. direkt auf einer Party) problemlos möglich.
+
+Das bedeutet, das die meisten Funktionalitäten mit reinem XHTML und CSS2 realisiert werden. JavaScript sollte nur dann eingsetzt werden, wenn es sich nicht anders realisieren lässt bzw wenn das nicht-funktionieren von JavaScript nur optishe Einbußen mit sich bringt. Auch ist daran zu denken, dass kein Browser 100\% XHTML- und CSS2-kompatibel ist.
+
+\subsection{Externe Schnittstellen}
+Das Forum wird vom sog. CaveBot dazu genutzt, um für bestimmte Dinge (Bildergallerie, Kalendereintrag) einen Thread zu eröffnen. Dies wird durch direkte Modifikation der Tabellen vom WBB-Forum erreicht. Abzuklären ist, ob es irgendwelche Wrapper-Funktionen, möglichst in Java bzw. JSP dazu gibt.
+
+\subsection{Qualitätsanforderungen}
+Die Besucherzahlen auf der Seite schwanken sehr. An normalen Tagen sind nur die Stammbesucher vertrten, die hauptsächlich das Forum nutzen. An Tagen nach Parties, vor allen am Wochenende, kommen aber durchaus bis zu 1000 Leute pro Tag die Seite. Vor allem von diesem "`Laufkundschaft"' werden lange Wartezeiten, Fehler oder sogar Downtimes nicht akzeptiert. Ein reibungsloser Systemebetrieb ist extrem wichtig!
+
+\subsection{Sonstige Anforderungen}
+Die zukünfitge Wartbarkeit und Erweiterbarkeit von Incave.de darf nicht be- oder verhindert werden. Daher ist es zwingend erforderlich, dass alles ausführlichst dokumentiert ist.

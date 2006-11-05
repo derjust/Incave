@@ -1,0 +1,47 @@
+.entry {
+        margin: 0px auto;
+        width:85%;
+        background-color:#333333;
+        overflow:auto;
+        margin-bottom:15px;
+        padding:5px;
+}
+
+.entrynth-child(odd) {
+background-color:red;   
+}
+.text {
+        float: right;
+        width: 75%;
+}
+
+.text hr {
+    width:75%;
+}
+
+.information .time {
+    font-size: x-small;
+}
+
+.information img {
+    border: 0px;
+}
+
+.information .name {
+    font-size: large;
+
+}
+
+.information .icq {
+    font-size: small;
+}
+
+.information .icq a {
+    color: #fff;
+    text-decoration:none;
+}
+
+.information a:hover, .information .icq a:hover {
+ border-bottom:1px solid #fff;
+}
+

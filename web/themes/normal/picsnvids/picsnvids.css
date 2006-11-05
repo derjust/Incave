@@ -1,0 +1,18 @@
+#gallery img {
+    border: 0;
+}
+
+#gallery a {
+color: white;
+ text-decoration:none;
+}
+
+#gallery a:hover {
+text-decoration:underline;
+}
+
+
+#gallery td {
+    text-align: center;
+    vertical-align: top;
+}

@@ -1,0 +1,83 @@
+#counter {
+    margin:0 auto;
+    width:85%;
+    font-size:small;
+    text-align:center;
+
+}
+
+#counter #allHits {
+    background-color: #333333;
+    width:24%;
+    float:left;
+    border: 1px solid #000;
+}
+
+#counter #todayHits {
+    width:24%;
+    float:left;
+    border: 1px solid #000;
+}
+
+#counter #yesterdayHits  {
+    width:24%;
+    float:left;
+    border: 1px solid #000;
+}
+
+#counter #onlineCount {
+    width:24%;
+    float:left;
+    background-color: #333333;
+    border: 1px solid #000;
+}
+
+.newsentry, .calendarentry {
+    margin:0 auto;
+    width:85%;
+    margin-bottom: 15px;
+}
+
+.newsentry .text {
+    text-align:center;
+}
+
+.newsentry .head {
+    background-color: #333333;
+}
+
+.newsentry .head .title {
+    font-size:x-large;
+    float:left;
+}
+
+.newsentry .head .right {
+    text-align:right;
+    font-size: small;
+}
+
+.newsentry .foot {
+    background-color: #333333;
+    text-align:center;
+}
+
+.newsentry .foot img {
+    padding-top:5px;
+}
+
+h1 {
+    display:none;
+}
+
+.calendarentry {
+    height:250px;
+}
+
+.calendarentry .flyer {
+    float:right;
+}
+
+.calendarentry .text {
+    vertica-align:middle;
+
+}

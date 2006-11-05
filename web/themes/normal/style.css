@@ -1,0 +1,53 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #22242E;
+        color:#DDDDDD;
+        font-family: verdana, arial, helvetica, sans-serif;
+	scrollbar-face-color: #22242E;
+	scrollbar-highlight-color: #DDDDDD;
+	scrollbar-3dlight-color: #DDDDDD;
+	scrollbar-darkshadow-color: #AAAAAA;
+	scrollbar-shadow-color: #22242E;
+	scrollbar-arrow-color: #DDDDDD;
+	scrollbar-track-color: #22242E;
+}
+
+a img {
+    border:0;
+}
+
+#mainPage {
+	margin: 0px auto 5px;
+	width: 800px;
+}
+
+#mainMenu {
+    height: 200px;
+}
+
+#mainMenu img {
+        border: 0;
+        margin: 0px;
+}
+
+#mainContent {
+	background-color: #7B7B7B;
+	background-image: url("background.jpg");
+        padding-bottom:5px;
+}
+
+#mainContent h1 {
+        font-size: x-large;
+        margin-top: 0px;
+}
+
+#mainContent h1, #mainContent h2, #mainContent h3 {
+        padding-bottom:0px;
+        margin-bottom:5px;
+}
+
+.title {
+    font-size: large;
+}
+

@@ -1,0 +1,87 @@
+\section{Allgemeine Beschreibung}
+Incave.de versteht sich in erster Linie als Community-Seite und biete Fotos von Parties aus der Umgebung von Kempen (Niederrhein). Neben diesem Fotoservice wurden in letzter Zeit weitere Community-Dienste hinzugefügt. Dazu zählen Gästebuch, Forum, Eventkalender und eine erweiterte Bildergalerie.
+
+Ein kommerzielles Interesse steht nicht hinter Incave.de. Es dient allen Beteiligten nur als Hobby.
+
+Als "`Mitbewerber"', der ins selbe Umfeld wie Incave.de fällt, ist nur fiesta-noche.de bekannt.
+
+\subsection{Produktperspektive}
+Auf dem Markt verfügbare CM-Systeme sind entweder zu groß bzw. bieten keine Galerie, die sich komplett in die Seite integriert. Auch das Forum soll weiterhin so bestehen bleiben wie es jetz ist und darf von diesem Projekt nicht beeinflusst werden.
+
+\subsection{Prodkutinformationen}
+Incave.de besteht aus mehreren Elementen. Deren IST-Zustand und zukünftige Erweiterungen wird hier nun detailiert aufgeführt. Als Benutzergruppen existieren (ausserhalb des Forums) nur die Rollen Anonymous (jeder Benutzer) und Administrator (Autentifizierung per Passwort).
+
+\subsubsection{Bildergalerien}
+Die Galerien sind das Herz von Incave. Hier können die Benutzer Galerien und Untergalerien begutachten. Neben dem Angucken können einzlene Bilder auch Bewertet werden. Die Top50 aller Bilder kann sich jeder Benutzer auch seperat anzeigen lassen. Ausserdem legt der Cavebot auf Befehl für eine neue Gallerie auch einen neuen Thread im Forum an, um Kommentare zu ermöglichen.
+
+Hinzu kommt, dass der Besucher Direklinks zu einzlenen Fotos an seine Freunde verschicken kann. Das direkte Hinterunterladen von Bildern ist aber nicht möglich und soll so gut wie möglich verhindert werden. (Rechtslage?)
+
+Der Adminstrator kann Gallerien anlegen, bearbeiten und löschen. Außerdem kann er Galerien zu anderen Galerien als Untergalerien hinzufügen. Die Thumbnailgenerierung und das anbringen eines Wasserzeichens auf jedem Bild wird über das System beim Anlegen einer neuen Gallerie durchgeführt.
+
+Zukünftig sollen Gäste bis zu 10 Bilder auswählen können, die ihnen per Mail zugeschickt werden (mit Wasserzeichen). Diese Funktionalität ist genau zu Protokollieren um Mißbrauch zu verhindern (Benutzung duch Bots, übermäßiger Gebrauch durch Gäste).
+
+\subsubsection{Gästebuch}
+Im Gästebuch können alle Besucher der Seite Nachrichten hinterlassen. Eine Registrierung ist nicht erforderlich. Neben der Nachricht kann noch ein Nickname sowie Emailadresse, IM-Kontakt und Homepageadresse hinterlassen.
+
+Die einzelnen Meldungen können von einem Administrator kommentiert, bearbeitet und gelöscht werden. Das Spamaufkommen durch Bots soll im neuen Gästebuch auf 0 gesenkt werden.
+
+\subsubsection{Forum} 
+Da das Gästebuch teilweise für lange Diskussionen benutzt wurde, wurde ein Forum eingerichtet. Hier trifft sich die Stammkundschaft von Incave.de. Haupsächlich geht es in den Diskussionen um anstehende Events und die üblichen Off-Topic-Diskussionen.
+
+Das Forum ist eine fertige Lösung und wird als externes Modul in diesem Projekt angsehen. Es soll mit der neuen Seite auch funktionieren und benutz werden (über den CaveBot).
+
+\subsubsection{Eventkalender}
+Um, vor allem der "`Laufkundschaft"' eine Übersicht über nächste Events in Kempen und Umgebung zu geben existiert der Eventkalender. Neben dem Flyer ist das Datum, die Uhrzeit, der Ort und ggf. das Motto der Party ersichtbar.
+
+Ein Administrator kann entsprechende Kalendereinträge anlegen, bearbeiten und löschen. Außerdem soll über den Cavebot ein kommentieren eines Kalendereintrages im Forum möglich sein.
+
+\subsubsection{Newssystem}
+Alle offenen Threads aus einem Unterforum können auch seperat vom Forum auf der Seite dargestellt werden. Dies wird als Newssystem benutzt.
+
+Die Administration erfolgt komplett über das Forum.
+
+\subsubsection{Linkliste}
+Da Incave.de sich in Kempen und Umgebung einen Namen gemacht hat, gibt es auch eine Reihe befreundeter Organistaion, Vereine und Privatpersonen. Diese haben in der Linkliste neben einem kurzen Beschreibungstext auch einen Banner (Flash oder Bild) hinterlegt.
+
+Außerdem gibt es auf dieser Seite HTML-Code, damit Besucher den Incave-Banner auf ihrer Seite einbinden können. Ggf. sollte es einen Flash- und einen Bild-Banner geben um die Verbreitung des Incave-Banners zu erhöhen.
+
+Die Administration (Anlegen, Bearbeiten, Löschen) soll zukünftig von einem Adminstrator komplett über den Webbrowser erfolgen können.
+
+\subsubsection{Credits}
+Ehre dem, dem Ehre gebührt.
+
+Die Administration (Anlegen, Bearbeiten, Löschen) soll zukünftig von einem Adminstrator komplett über den Webbrowser erfolgen können.
+
+\subsubsection{Counter}
+Momentan werden die Anzahl der Besucher protokolliert. Angezeigt werden jeweils die Besucher des aktuellen Tages, des letzten Tages und die Gesamtzahl aller Besucher. Als statistische Auswertung stehen die Besucher jeder Woche eines Jahres zur Verfügung.
+
+Zukünftig soll die Statistik ggf. nicht mehr öffentlich sein und nur noch für Administratoren zugägnlich sein. Dafür soll das, was geloggt werden starkt erweiter werden. Auf jeden Fall erfasst werden sollen:
+\begin{itemize}
+ \item Länge des Aufenthalts
+ \item Besuchte Seiten
+ \item Anzahl der angesehen Bilder/Galerien
+ \item Verwendeter Browser
+ \item Herkunft des Besuchers (anhand der IP)
+\end{itemize}
+Diese Daten sollen in aussagekräftige Tabellen und Diagramme dargestellt werden.
+
+\subsubsection{Design}
+Bisher gibt es nur ein festes Design der Seite.
+
+Zukünftig soll es ein Default-Design geben und je nach Datum soll ein vorher erstelltes und eingerichtetes Design genutzt werden (Ähnlich der Google-Startseite die sich zu Weihnachten, Ostern etc. ändert). Die Konfiguration soll durch einen Administrator durchgeführt werden können.
+
+\subsubsection{Administrationsaufgaben}
+Bisher gibt es für die verschiedenenen administrativen Aufgaben verschiedene Accounts und Oberflächen durch die Vielzahl unterschiedlicher Scripte.
+
+In Zukunft sollen alle Tätigkeiten, die nichts mit dem Forum zu tun haben, über eine einheitliche Autentifizierung und Oberfläche ablaufen.
+
+\subsection{Benutzermerkmale}
+Die Besucher sind eher "`Laufkundschaft"'. Es sind hauptsächlich Internetnutzer mit keinem bis mittleren Computerwissen. Sie erwarten schlicht, dass alles funktioniert und sind selbst von kurzen Downtimes und kleinen Fehlern so verschreckt, dass sie auf lange Zeit die Internetseite meiden. Entsprechend erwarten sie nicht unbedingt das neuste auf dem Gebiet des Möglichen. Auch haben sie nicht unbedingt den neusten Browser.
+
+Funktionen die nur über eine vorherige Registrierung erreichbar sind werden nur von einer sehr kleinen Stammkundschaft genutzt und werden von den meisten Besuchern nicht angenommen bzw. genutzt.
+
+\subsection{Einschränkungen}
+Da es sich hauptsächlich um ein Hobby- und Testprojekt handelt gibt es keine Beschränkungen.
+
+\subsection{Annahmen und Abhängigkeiten}
+(nicht Realisierbares und auf spätere Versionen verschobene Eigenschaften)
